@@ -1,0 +1,25 @@
+{
+  "imports": {
+    "decimal.js": "./vendor/decimal.js/decimal.mjs"
+  },
+  "nodeModulesDir": "none",
+  "lock": {
+    "frozen": true
+  },
+  "fmt": {
+    "include": [
+      "backend/",
+      "tests/"
+    ]
+  },
+  "lint": {
+    "include": [
+      "backend/",
+      "tests/"
+    ]
+  },
+  "tasks": {
+    "check": "deno check backend/main.ts backend/protocol.ts",
+    "test:step1": "deno test tests/step1/"
+  }
+}

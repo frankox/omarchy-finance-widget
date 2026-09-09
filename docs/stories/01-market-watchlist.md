@@ -56,32 +56,32 @@ Restano fuori dall'intero prodotto: tempo reale garantito, creazione manuale di 
 
 ### AC-001 — Presenza e posizione su tutti i monitor
 
-**Given** un'installazione Omarchy supportata con più monitor e una posizione globale della barra scelta tra sinistra, centro o destra<br>
-**When** Omarchy Shell carica il plugin o l'utente cambia la posizione nelle impostazioni<br>
+**Given** un'installazione Omarchy supportata con più monitor e una posizione globale della barra scelta tra sinistra, centro o destra
+**When** Omarchy Shell carica il plugin o l'utente cambia la posizione nelle impostazioni
 **Then** il widget compare su ogni monitor nella stessa sezione configurata.
 
 ### AC-003 — Indicatore basato sulla watchlist
 
-**Given** l'indicatore di performance del portafoglio è disattivato e la watchlist contiene strumenti in ordine manuale<br>
-**When** il widget compatto viene visualizzato<br>
+**Given** l'indicatore di performance del portafoglio è disattivato e la watchlist contiene strumenti in ordine manuale
+**When** il widget compatto viene visualizzato
 **Then** mostra la variazione percentuale giornaliera del primo strumento, e il valore segue un eventuale riordino della watchlist.
 
 ### AC-004 — Ricerca delle classi supportate
 
 **Given** il provider contiene una corrispondenza appartenente a una delle classi supportate: azione, ETF, ETC, ETN, indice, fondo comune, obbligazione, criptovaluta, strumento valutario o materia prima<br>
-**When** l'utente cerca per nome, ticker o altro identificatore esposto dal provider<br>
+**When** l'utente cerca per nome, ticker o altro identificatore esposto dal provider
 **Then** la ricerca può restituire lo strumento con la sua classe; se il provider non contiene alcuna corrispondenza, mostra `Not found`.
 
 ### AC-017 — Refresh automatico condiviso
 
-**Given** più istanze del widget usano la stessa cache e questa è stata aggiornata meno di sei ore prima<br>
-**When** il plugin si avvia, il pannello viene aperto o un'altra istanza richiede i dati<br>
+**Given** più istanze del widget usano la stessa cache e questa è stata aggiornata meno di sei ore prima
+**When** il plugin si avvia, il pannello viene aperto o un'altra istanza richiede i dati
 **Then** non parte un nuovo refresh automatico e tutte le istanze leggono la cache condivisa.
 
 ### AC-018 — Dati obsoleti in caso di errore
 
-**Given** esistono valori in cache e il provider o la rete non sono disponibili<br>
-**When** un refresh fallisce<br>
+**Given** esistono valori in cache e il provider o la rete non sono disponibili
+**When** un refresh fallisce
 **Then** i valori memorizzati restano visibili, sono marcati come obsoleti con l'orario dell'ultimo aggiornamento e non vengono sostituiti con zero.
 
 ## Verifiche supplementari della slice

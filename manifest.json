@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "frankox.omarchy-finance-widget",
+  "name": "Omarchy Finance Widget",
+  "version": "0.1.0",
+  "author": "Matteo Franchini",
+  "license": "MIT",
+  "description": "A local-first market watchlist for the Omarchy bar.",
+  "kinds": [
+    "bar-widget",
+    "service"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "barWidget": "qml/BarWidget.qml",
+    "service": "qml/FinanceService.qml"
+  },
+  "barWidget": {
+    "displayName": "Finance",
+    "description": "Delayed market data and a local watchlist.",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
